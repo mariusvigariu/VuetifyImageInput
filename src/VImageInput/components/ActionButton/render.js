@@ -9,7 +9,7 @@ export default function(h, {
 			class: 'ma-1',
 			props: {
 				disabled: parent.disabled,
-				flat: true,
+				text: true,
 				icon: true,
 			},
 			on: listeners,
