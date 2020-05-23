@@ -73,6 +73,11 @@ export default {
 	uploadIconStyle,
 	value,
 
+  outputScale: {
+    type: Number,
+    default: 1,
+  },
+
 	backgroundColor: {},
 	maxScaling: {},
 	minScaling: {},
