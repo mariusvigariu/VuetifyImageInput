@@ -1,10 +1,12 @@
+import { VBtn, VIcon } from 'vuetify/lib'
+
 export default function(h, {
 	listeners,
 	parent,
 	props,
 }) {
 	return h(
-		'VBtn',
+		VBtn,
 		{
 			class: 'ma-1',
 			props: {
@@ -15,7 +17,7 @@ export default function(h, {
 			on: listeners,
 		},
 		[h(
-			'VIcon',
+			VIcon,
 			{
 				style: props.iconStyle,
 			},

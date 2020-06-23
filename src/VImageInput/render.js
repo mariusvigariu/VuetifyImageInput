@@ -1,3 +1,5 @@
+import VSpacer from 'vuetify/lib/components/VGrid/VSpacer.js'
+
 export default function(h) {
 	return h(
 		'div',
@@ -36,7 +38,7 @@ export default function(h) {
 					...(this.clearable
 						? [
 							h('MyClearButton'),
-							h('VSpacer'),
+							h(VSpacer),
 						]
 						: []
 					),

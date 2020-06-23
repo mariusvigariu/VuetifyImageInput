@@ -1,3 +1,5 @@
+import { VSlider } from 'vuetify/lib'
+
 export default function(h, {parent}) {
 	let {
 		computedMaxScaling,
@@ -7,7 +9,7 @@ export default function(h, {parent}) {
 		scaling,
 	} = parent;
 	return h(
-		'VSlider',
+		VSlider,
 		{
 			class: 'ma-1',
 			props: {

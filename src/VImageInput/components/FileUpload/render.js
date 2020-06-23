@@ -1,4 +1,6 @@
-import VueFileUpload from '../../../VueFileUpload';
+import { VCard, VProgressCircular, VIcon } from 'vuetify/lib'
+
+import VueFileUpload from '../../../VueFileUpload'
 
 export default function(h, {
 	data,
@@ -34,7 +36,7 @@ export default function(h, {
 					progress,
 				}) => {
 					return h(
-						'VCard',
+						VCard,
 						{
 							style: {
 								alignItems: 'center',
@@ -60,7 +62,7 @@ export default function(h, {
 									indeterminate = true;
 								}
 								return h(
-									'VProgressCircular',
+									VProgressCircular,
 									{
 										props: {
 											color: 'primary',
@@ -94,7 +96,7 @@ export default function(h, {
 								text = uploadIcon;
 							}
 							return h(
-								'VIcon',
+								VIcon,
 								{
 									style,
 									props: {
