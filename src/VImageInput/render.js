@@ -19,66 +19,6 @@ export default function(h) {
         'div',
         {
           style: {
-            display: 'flex',
-            flexDirection: 'row-reverse',
-            gridColumn: 2,
-            gridRow: 1,
-            justifyContent: 'center',
-            ...(this.internalImageData
-              ? {}
-              : {
-                // opacity: 0,
-                // pointerEvents: 'none',
-                // visibility: 'hidden',
-              }
-            ),
-          },
-        },
-        [
-          ...(this.clearable
-            ? [
-              h('MyClearButton'),
-              h(VSpacer),
-            ]
-            : []
-          ),
-          ...(this.hideActions || this.readonly
-            ? []
-            : [
-              h('MyRotateClockwiseButton'),
-              h('MyRotateCounterClockwiseButton'),
-              h('MyFlipHorizontallyButton'),
-              h('MyFlipVerticallyButton'),
-              h('MyShowLegendButton'),
-            ]
-          ),
-        ],
-      ),
-      h(
-        'div',
-        {
-          style: {
-            gridColumn: 1,
-            gridRow: 2,
-            ...(this.internalImageData
-              ? {}
-              : {
-                opacity: 0,
-                pointerEvents: 'none',
-                visibility: 'hidden',
-              }
-            ),
-          },
-        },
-        (this.hideActions || this.readonly
-          ? []
-          : [h('MyScalingSlider')]
-        ),
-      ),
-      h(
-        'div',
-        {
-          style: {
             gridColumn: 1,
             gridRow: 1,
             overflow: 'hidden',
@@ -204,6 +144,66 @@ export default function(h) {
                 },
               },
             )]
+          ),
+        ],
+      ),
+      h(
+        'div',
+        {
+          style: {
+            gridColumn: 1,
+            gridRow: 2,
+            ...(this.internalImageData
+              ? {}
+              : {
+                opacity: 0,
+                pointerEvents: 'none',
+                visibility: 'hidden',
+              }
+            ),
+          },
+        },
+        (this.hideActions || this.readonly
+          ? []
+          : [h('MyScalingSlider')]
+        ),
+      ),
+      h(
+        'div',
+        {
+          style: {
+            display: 'flex',
+            flexDirection: 'row-reverse',
+            gridColumn: 2,
+            gridRow: 1,
+            justifyContent: 'center',
+            ...(this.internalImageData
+              ? {}
+              : {
+                // opacity: 0,
+                // pointerEvents: 'none',
+                // visibility: 'hidden',
+              }
+            ),
+          },
+        },
+        [
+          ...(this.clearable
+            ? [
+              h('MyClearButton'),
+              h(VSpacer),
+            ]
+            : []
+          ),
+          ...(this.hideActions || this.readonly
+            ? []
+            : [
+              h('MyRotateClockwiseButton'),
+              h('MyRotateCounterClockwiseButton'),
+              h('MyFlipHorizontallyButton'),
+              h('MyFlipVerticallyButton'),
+              h('MyShowLegendButton'),
+            ]
           ),
         ],
       ),
