@@ -1,6 +1,6 @@
-import clearable from './clearable';
 import clearIcon from './clearIcon';
 import clearIconStyle from './clearIconStyle';
+import clearable from './clearable';
 import debounce from './debounce';
 import disabled from './disabled';
 import errorIcon from './errorIcon';
@@ -29,6 +29,8 @@ import rotateClockwiseIcon from './rotateClockwiseIcon';
 import rotateClockwiseIconStyle from './rotateClockwiseIconStyle';
 import rotateCounterClockwiseIcon from './rotateCounterClockwiseIcon';
 import rotateCounterClockwiseIconStyle from './rotateCounterClockwiseIconStyle';
+import showLegendIcon from './showLegendIcon';
+import showLegendIconStyle from './showLegendIconStyle';
 import successIcon from './successIcon';
 import successIconStyle from './successIconStyle';
 import uploadIcon from './uploadIcon';
@@ -39,6 +41,8 @@ export default {
 	clearable,
 	clearIcon,
 	clearIconStyle,
+	showLegendIcon,
+	showLegendIconStyle,
 	debounce,
 	disabled,
 	errorIcon,

@@ -49,6 +49,7 @@ export default function(h) {
 							h('MyRotateCounterClockwiseButton'),
 							h('MyFlipHorizontallyButton'),
 							h('MyFlipVerticallyButton'),
+							h('MyShowLegendButton'),
 						]
 					),
 				],
@@ -206,6 +207,7 @@ export default function(h) {
 					),
 				],
 			),
+      this.legendShown ? h('MyLegend') : undefined,
 		],
 	);
 }
